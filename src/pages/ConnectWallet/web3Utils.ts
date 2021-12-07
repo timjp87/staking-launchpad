@@ -19,6 +19,7 @@ export enum NetworkChainId {
   'Ropsten' = 3,
   'Rinkeby' = 4,
   'Göerli' = 5,
+  'Devnet3' = 1337602,
   'Kovan' = 42,
 }
 
