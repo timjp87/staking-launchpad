@@ -30,6 +30,7 @@ export enum NetworkChainId {
 
 const supportedNetworks = [
   NetworkChainId['Göerli'],
+  NetworkChainId.Devnet3,
   NetworkChainId.Mainnet,
   NetworkChainId.Rinkeby,
   NetworkChainId.Ropsten,
