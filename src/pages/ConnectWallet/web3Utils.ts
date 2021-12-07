@@ -37,7 +37,7 @@ const supportedNetworks = [
 ];
 
 enum Testnet {
-  'Göerli',
+  'Devnet3',
 }
 
 enum Mainnet {
@@ -57,7 +57,7 @@ export const portis: PortisConnector = new PortisConnector({
 
 export const fortmatic: FortmaticConnector = new FortmaticConnector({
   apiKey: FORTMATIC_KEY as string,
-  chainId: IS_MAINNET ? NetworkChainId.Mainnet : NetworkChainId['Göerli'],
+  chainId: IS_MAINNET ? NetworkChainId.Devnet3 : NetworkChainId['Devnet3'],
   rpcUrl: INFURA_URL,
 });
 
