@@ -45,7 +45,7 @@ export const Option1 = ({
       </Text>
       <Link
         isTextLink={false}
-        to="https://github.com/ethereum/eth2.0-deposit-cli/releases/"
+        to="https://github.com/timjp87/eth2.0-deposit-cli/"
         className="my40"
       >
         <Button
@@ -65,12 +65,11 @@ export const Option1 = ({
             style={{ wordBreak: 'break-word' }}
           >
             <FormattedMessage
-              defaultMessage="Please make sure that you are downloading from the official Ethereum
-              Foundation GitHub account by verifying the url: {url}"
+              defaultMessage="You are downloading an unofficial fork for this devnet do not use it for generating mainnet deposits!: {url}"
               values={{
                 url: (
                   <strong>
-                    https://github.com/ethereum/eth2.0-deposit-cli/releases/
+                    https://github.com/timjp87/eth2.0-deposit-cli/releases/
                   </strong>
                 ),
               }}
@@ -83,7 +82,7 @@ export const Option1 = ({
       <GithubScreenshot />
 
       <Text weight={500} className="mt20">
-        <FormattedMessage defaultMessage="Step 2: Generate deposit keys using the Ethereum Foundation deposit tool" />
+        <FormattedMessage defaultMessage="Step 2: Generate deposit keys using the deposit tool" />
       </Text>
       <Alert className="my20" variant="info">
         <FormattedMessage defaultMessage="For security, we recommend you disconnect from the internet to complete this step." />
@@ -129,7 +128,7 @@ export const Option1 = ({
               {`--${formatMessage({
                 defaultMessage: 'chain',
                 description: 'this is used as a command line flag',
-              })} ${ETH2_NETWORK_NAME.toLowerCase()}`}
+              })} 'devnet3'`}
             </span>
           </Pre>
         </Alert>
@@ -143,7 +142,7 @@ export const Option1 = ({
                     {`--${formatMessage({
                       defaultMessage: 'chain',
                       description: 'this is used as a command line flag',
-                    })} ${ETH2_NETWORK_NAME.toLowerCase()}`}
+                    })} 'devnet3'`}
                   </Code>
                 ),
                 network: (
